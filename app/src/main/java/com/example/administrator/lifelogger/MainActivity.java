@@ -155,8 +155,8 @@ public class MainActivity extends Activity {
                     //Toast.makeText(mContext, "위도 : " + lat + "경도 : " + lng, Toast.LENGTH_LONG).show();
                     in_map.putExtra("lat", lat); // 위도정보 넘겨주기
                     in_map.putExtra("lng", lng); // 경도정보 넘겨주기
-                    Toast.makeText(mContext, "lat : " + lat + "lng" + lng, Toast.LENGTH_LONG).show(); // Gps 사용불가할 때
-                    //startActivity(in_map);
+                    //Toast.makeText(mContext, "lat : " + lat + "lng" + lng, Toast.LENGTH_LONG).show(); // Gps 사용불가할 때
+                    startActivity(in_map);
                 } else {
                     Toast.makeText(mContext, "Gps가 사용 가능하지 않습니다", Toast.LENGTH_LONG).show(); // Gps 사용불가할 때
                 }
